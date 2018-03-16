@@ -1,3 +1,8 @@
+scriptencoding utf-8
+
+let s:save_cpo = &cpo
+set cpo&vim
+
 if get(g:, 'loaded_pydoc_view', 0)
   finish
 endif
@@ -107,3 +112,6 @@ command! PydocView3 call g:pydoc_view#run(g:pydoc_view_pydoc3_cmd, pydoc_view#ge
 command! -nargs=1 Pydoc call g:pydoc_view#run(g:pydoc_view_pydoc_cmd, '<args>', 0)
 command! -nargs=1 Pydoc2 call g:pydoc_view#run(g:pydoc_view_pydoc2_cmd, '<args>', 0)
 command! -nargs=1 Pydoc3 call g:pydoc_view#run(g:pydoc_view_pydoc3_cmd, '<args>', 0)
+
+let &cpo = s:save_cpo
+unlet s:save_cpo
