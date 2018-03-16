@@ -38,6 +38,8 @@ function! s:view_result(result) "{{{
   setlocal nospell
   setlocal breakindent
 
+  silent call cursor(1,1)
+  silent execute '0d 999999'
   silent put =a:result
   silent execute '0d 1'
 
