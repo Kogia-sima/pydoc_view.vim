@@ -9,9 +9,6 @@ endif
 
 let g:loaded_pydoc_view = 1
 
-let g:pydoc_view_pydoc_cmd = 'pydoc3.6'
-
-
 " parameters {{{
 let g:pydoc_view_pydoc_cmd = get(g:, 'pydoc_view_pydoc_cmd', 'pydoc')
 let g:pydoc_view_pydoc2_cmd = get(g:, 'pydoc_view_pydoc_cmd', 'pydoc')
