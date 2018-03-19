@@ -90,7 +90,7 @@ function! g:pydoc_view#toggle() "{{{
     endif
   endfunction
 
-  noautocmd windo call s:pydoc_try_close()
+  noautocmd bufdo call s:pydoc_try_close()
 
   if s:pydoc_view_bufid == -1
     silent call s:view_result('')
