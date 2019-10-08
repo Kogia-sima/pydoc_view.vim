@@ -2,7 +2,7 @@
 
 pydoc integration plugin for vim.
 
-:exclamation: This plugin is currently in an early stage of development. You may use this plugin, but there some bugs remain. If you find a problem, please report it to me.
+:exclamation: This plugin was abondoned. If you want to continue this project, please contact me.
 
 ## Feature
 
